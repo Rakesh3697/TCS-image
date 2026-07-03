@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Analytics | Gaming & Esports Admin</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="Admin-Analytics.css">
+    
+</head>
+
+<body>
+
+<div class="dashboard">
+
+     <!-- ========================= -->
+    <!-- SIDEBAR -->
+    <!-- ========================= -->
+
+    <aside class="sidebar">
+
+    <div class="logo">
+
+        <div class="logo-icon">🎮</div>
+
+        <div>
+
+            <h2>GAMEVERSE</h2>
+
+            <span>Admin Panel</span>
+
+        </div>
+
+    </div>
+
+    <ul class="menu">
+
+        <li>
+            <!-- Change active class for each page -->
+            <a href="Admin-Dashboard.html">
+                <i class="ri-dashboard-line"></i>
+                Dashboard
+            </a>
+        </li>
+
+        <li>
+            <a href="Admin-User-Verification.html">
+                <i class="ri-user-search-line"></i>
+                User Verification
+            </a>
+        </li>
+
+        <li>
+            <a href="Admin-Influencer-Verification.html">
+                <i class="ri-user-star-line"></i>
+                Influencer Verification
+            </a>
+        </li>
+
+        <li>
+            <a href="Admin-Brand-Verification.html">
+                <i class="ri-building-line"></i>
+                Brand Verification
+            </a>
+        </li>
+
+        <li>
+            <a href="Admin-Tournament.html">
+                <i class="ri-trophy-line"></i>
+                Tournament Management
+            </a>
+        </li>
+
+        <li>
+            <a href="Admin-subcriptions.html">
+                <i class="ri-vip-crown-line"></i>
+                Subscription Management
+            </a>
+        </li>
+
+        <li>
+            <a href="Admin-Report.html">
+                <i class="ri-file-chart-line"></i>
+                Reports
+            </a>
+        </li>
+
+        <li>
+            <a href="Admin-Analytics.html">
+                <i class="ri-bar-chart-box-line"></i>
+                Analytics
+            </a>
+        </li>
+
+        <li>
+            <a href="Admin-Settings.html">
+                <i class="ri-settings-3-line"></i>
+                Settings
+            </a>
+        </li>
+
+        <li>
+            <a href="Admin-activity-logs.html">
+                <i class="ri-history-line"></i>
+                Activity Logs
+            </a>
+        </li>
+
+        <li>
+            <a href="Admin-System-logs.html">
+                <i class="ri-server-line"></i>
+                System Status
+            </a>
+        </li>
+
+        <li>
+            <a href="Admin-support-tickets.html">
+                <i class="ri-customer-service-2-line"></i>
+                Support Tickets
+            </a>
+        </li>
+
+        <li>
+            <a href="#">
+                <i class="ri-logout-box-r-line"></i>
+                Logout
+            </a>
+        </li>
+
+    </ul>
+
+</aside>
+
+    <!-- ================================= -->
+    <!-- MAIN CONTENT -->
+    <!-- ================================= -->
+
+    <main class="main-content">
+
+        <!-- TOPBAR -->
+
+        <header class="topbar">
+
+            <div class="search-box">
+
+                <i class="ri-search-line"></i>
+
+                <input
+    id="globalSearch"
+    type="text"
+    placeholder="Search users, influencers, brands..."
+>
+            </div>
+
+            <div class="top-right">
+
+                <button class="notification">
+
+                    <i class="ri-notification-3-line"></i>
+
+                </button>
+
+                <button class="notification">
+
+                    <i class="ri-mail-line"></i>
+
+                </button>
+
+                <div class="admin-profile">
+
+                    <img src="https://i.pravatar.cc/100?img=12"
+                         alt="Admin">
+
+                    <div>
+
+                        <h4>Admin User</h4>
+
+                        <span>Super Admin</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- PAGE HEADER -->
+
+        <section class="page-header">
+
+            <div>
+
+                <h1>Analytics</h1>
+
+                
+            </div>
+
+        </section>
+
+        <!-- ================================= -->
+        <!-- ANALYTICS SUMMARY -->
+        <!-- ================================= -->
+
+        <section class="stats-grid">
+
+            <div class="stat-card">
+
+                <div class="icon purple">
+
+                    <i class="ri-group-line"></i>
+
+                </div>
+
+                <h5>Total Users</h5>
+
+                <h2>5,742</h2>
+
+                <span class="success">
+
+                    ↑ 12.5% from last month
+
+                </span>
+
+            </div>
+
+            <div class="stat-card">
+
+                <div class="icon cyan">
+
+                    <i class="ri-shield-user-line"></i>
+
+                </div>
+
+                <h5>Influencers</h5>
+
+                <h2>1,156</h2>
+
+                <span class="success">
+
+                    ↑ 8.4%
+
+                </span>
+
+            </div>
+
+            <div class="stat-card">
+
+                <div class="icon green">
+
+                    <i class="ri-building-line"></i>
+
+                </div>
+
+                <h5>Brands</h5>
+
+                <h2>632</h2>
+
+                <span class="success">
+
+                    ↑ 7.2%
+
+                </span>
+
+            </div>
+
+            <div class="stat-card">
+
+                <div class="icon orange">
+
+                    <i class="ri-money-dollar-circle-line"></i>
+
+                </div>
+
+                <h5>Total Revenue</h5>
+
+                <h2>₹8,42,500</h2>
+
+                <span class="success">
+
+                    ↑ 15.3%
+
+                </span>
+
+            </div>
+
+        </section>
+
+        <!-- ================================= -->
+        <!-- PART 2 STARTS HERE -->
+        <!-- ================================= -->
+
+<!-- ================================= -->
+        <!-- USER GROWTH + VERIFICATION -->
+        <!-- ================================= -->
+
+        <div class="analytics-grid">
+
+            <!-- USER GROWTH -->
+
+            <div class="analytics-card large-card">
+
+                <div class="card-header">
+
+                    <h3>User Growth</h3>
+
+                   <select
+    class="card-select"
+    id="verificationFilter">
+
+    <option value="current">This Month</option>
+    <option value="last">Last Month</option>
+
+</select>
+</select>
+
+
+                </div>
+
+               <div class="chart-placeholder">
+    <canvas id="userGrowthChart"></canvas>
+</div>
+                <div class="chart-labels">
+
+                    <span>Jan</span>
+
+                    <span>Feb</span>
+
+                    <span>Mar</span>
+
+                    <span>Apr</span>
+
+                    <span>May</span>
+
+                    <span>Jun</span>
+
+                </div>
+
+            </div>
+
+            <!-- VERIFICATION ANALYTICS -->
+
+            <div class="analytics-card">
+
+                <div class="card-header">
+
+                    <h3>Verification Analytics</h3>
+
+                    <select class="card-select">
+
+                        <option>This Month</option>
+
+                        <option>Last Month</option>
+
+                    </select>
+
+                </div>
+
+                <!-- USERS -->
+
+                <div class="progress-item">
+
+                    <div class="progress-top">
+
+                        <span>Users</span>
+
+                        <span>92%</span>
+
+                    </div>
+
+                    <div class="progress">
+
+                        <div class="progress-bar purple"
+                             style="width:92%"></div>
+
+                    </div>
+
+                    <small>
+
+                        5,284 Verified • 458 Pending
+
+                    </small>
+
+                </div>
+
+                <!-- INFLUENCERS -->
+
+                <div class="progress-item">
+
+                    <div class="progress-top">
+
+                        <span>Influencers</span>
+
+                        <span>81%</span>
+
+                    </div>
+
+                    <div class="progress">
+
+                        <div class="progress-bar cyan"
+                             style="width:81%"></div>
+
+                    </div>
+
+                    <small>
+
+                        934 Verified • 222 Pending
+
+                    </small>
+
+                </div>
+
+                <!-- BRANDS -->
+
+                <div class="progress-item">
+
+                    <div class="progress-top">
+
+                        <span>Brands</span>
+
+                        <span>75%</span>
+
+                    </div>
+
+                    <div class="progress">
+
+                        <div class="progress-bar green"
+                             style="width:75%"></div>
+
+                    </div>
+
+                    <small>
+
+                        474 Approved • 158 Pending
+
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ================================= -->
+        <!-- PART 3 STARTS HERE -->
+        <!-- ================================= -->
+
+<!-- ================================= -->
+        <!-- TOURNAMENT + SUBSCRIPTION + PLATFORM -->
+        <!-- ================================= -->
+
+        <div class="analytics-grid three-column">
+
+            <!-- Tournament Analytics -->
+
+            <div class="analytics-card">
+
+                <div class="card-header">
+
+                    <h3>Tournament Analytics</h3>
+
+                    <select class="card-select">
+
+                        <option>This Month</option>
+
+                    </select>
+
+                </div>
+
+                <div class="donut-chart">
+    <canvas id="tournamentChart"></canvas>
+</div>
+
+
+                <div class="analytics-list">
+
+                    <div class="analytics-row">
+
+                        <span>Completed</span>
+
+                        <strong>318 (75.5%)</strong>
+
+                    </div>
+
+                    <div class="analytics-row">
+
+                        <span>Active</span>
+
+                        <strong>76 (18.1%)</strong>
+
+                    </div>
+
+                    <div class="analytics-row">
+
+                        <span>Cancelled</span>
+
+                        <strong>27 (6.4%)</strong>
+
+                    </div>
+
+                </div>
+
+                <button class="secondary-btn full-btn">
+
+                    View All Tournaments
+
+                </button>
+
+            </div>
+
+            <!-- Subscription Analytics -->
+
+            <div class="analytics-card">
+
+                <div class="card-header">
+
+                    <h3>Subscription Analytics</h3>
+
+                    <select class="card-select">
+
+                        <option>This Month</option>
+
+                    </select>
+
+                </div>
+
+                <div class="donut-chart">
+    <canvas id="subscriptionChart"></canvas>
+</div>
+
+                <div class="analytics-list">
+
+                    <div class="analytics-row">
+
+                        <span>Basic Users</span>
+
+                        <strong>3,984 (69.4%)</strong>
+
+                    </div>
+
+                    <div class="analytics-row">
+
+                        <span>Premium Users</span>
+
+                        <strong>1,758 (30.6%)</strong>
+
+                    </div>
+
+                </div>
+
+                <button class="secondary-btn full-btn">
+
+                    View Subscription Details
+
+                </button>
+
+            </div>
+
+            <!-- Platform Distribution -->
+
+            <div class="analytics-card">
+
+                <div class="card-header">
+
+                    <h3>Platform Distribution</h3>
+
+                </div>
+
+                <div class="donut-chart">
+    <canvas id="platformChart"></canvas>
+</div>
+
+                <div class="analytics-list">
+
+                    <div class="analytics-row">
+
+                        <span>Users</span>
+
+                        <strong>5,742</strong>
+
+                    </div>
+
+                    <div class="analytics-row">
+
+                        <span>Influencers</span>
+
+                        <strong>1,156</strong>
+
+                    </div>
+
+                    <div class="analytics-row">
+
+                        <span>Brands</span>
+
+                        <strong>632</strong>
+
+                    </div>
+
+                    <div class="analytics-row">
+
+                        <span>Organisers</span>
+
+                        <strong>421</strong>
+
+                    </div>
+
+                </div>
+
+                <button class="secondary-btn full-btn">
+
+                    View Platform Details
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- ================================= -->
+        <!-- PART 4 STARTS HERE -->
+        <!-- ================================= -->
+
+<!-- ================================= -->
+        <!-- RECENT ACTIVITY -->
+        <!-- ================================= -->
+
+        <section class="analytics-card">
+
+            <div class="card-header">
+
+                <h3>Recent Activity</h3>
+
+                <button class="secondary-btn">
+
+                    View All
+
+                </button>
+
+            </div>
+
+            <div class="activity-list">
+
+                <div class="activity-item">
+
+                    <div class="activity-icon purple">
+
+                        <i class="ri-user-add-line"></i>
+
+                    </div>
+
+                    <div class="activity-content">
+
+                        <h4>25 New Users Registered</h4>
+
+                        <p>Today • 09:15 AM</p>
+
+                    </div>
+
+                    <span class="activity-status success">
+
+                        Completed
+
+                    </span>
+
+                </div>
+
+                <div class="activity-item">
+
+                    <div class="activity-icon cyan">
+
+                        <i class="ri-shield-user-line"></i>
+
+                    </div>
+
+                    <div class="activity-content">
+
+                        <h4>8 Influencers Verified</h4>
+
+                        <p>Today • 10:30 AM</p>
+
+                    </div>
+
+                    <span class="activity-status success">
+
+                        Approved
+
+                    </span>
+
+                </div>
+
+                <div class="activity-item">
+
+                    <div class="activity-icon green">
+
+                        <i class="ri-building-line"></i>
+
+                    </div>
+
+                    <div class="activity-content">
+
+                        <h4>4 Brands Approved</h4>
+
+                        <p>Today • 11:45 AM</p>
+
+                    </div>
+
+                    <span class="activity-status success">
+
+                        Verified
+
+                    </span>
+
+                </div>
+
+                <div class="activity-item">
+
+                    <div class="activity-icon orange">
+
+                        <i class="ri-trophy-line"></i>
+
+                    </div>
+
+                    <div class="activity-content">
+
+                        <h4>3 New Tournaments Created</h4>
+
+                        <p>Today • 01:20 PM</p>
+
+                    </div>
+
+                    <span class="activity-status warning">
+
+                        Active
+
+                    </span>
+
+                </div>
+
+                <div class="activity-item">
+
+                    <div class="activity-icon red">
+
+                        <i class="ri-vip-crown-line"></i>
+
+                    </div>
+
+                    <div class="activity-content">
+
+                        <h4>12 Premium Subscriptions Purchased</h4>
+
+                        <p>Today • 03:10 PM</p>
+
+                    </div>
+
+                    <span class="activity-status success">
+
+                        Paid
+
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="Admin-Analytics.js"></script>
+</body>
+
+</html>

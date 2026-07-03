@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>System Status | Gaming & Esports Admin</title>
+
+    <!-- Google Font -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Remix Icons -->
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="Admin-System-logs.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+ <!-- ========================= -->
+    <!-- SIDEBAR -->
+    <!-- ========================= -->
+
+    <aside class="sidebar">
+
+    <div class="logo">
+
+        <div class="logo-icon">🎮</div>
+
+        <div>
+
+            <h2>GAMEVERSE</h2>
+
+            <span>Admin Panel</span>
+
+        </div>
+
+    </div>
+
+    <ul class="menu">
+
+        <li>
+            <!-- Change active class for each page -->
+            <a href="Admin-Dashboard.html">
+                <i class="ri-dashboard-line"></i>
+                Dashboard
+            </a>
+        </li>
+
+        <li>
+            <a href="Admin-User-Verification.html">
+                <i class="ri-user-search-line"></i>
+                User Verification
+            </a>
+        </li>
+
+        <li>
+            <a href="Admin-Influencer-Verification.html">
+                <i class="ri-user-star-line"></i>
+                Influencer Verification
+            </a>
+        </li>
+
+        <li>
+            <a href="Admin-Brand-Verification.html">
+                <i class="ri-building-line"></i>
+                Brand Verification
+            </a>
+        </li>
+
+        <li>
+            <a href="Admin-Tournament.html">
+                <i class="ri-trophy-line"></i>
+                Tournament Management
+            </a>
+        </li>
+
+        <li>
+            <a href="Admin-subcriptions.html">
+                <i class="ri-vip-crown-line"></i>
+                Subscription Management
+            </a>
+        </li>
+
+        <li>
+            <a href="Admin-Report.html">
+                <i class="ri-file-chart-line"></i>
+                Reports
+            </a>
+        </li>
+
+        <li>
+            <a href="Admin-Analytics.html">
+                <i class="ri-bar-chart-box-line"></i>
+                Analytics
+            </a>
+        </li>
+
+        <li>
+            <a href="Admin-Settings.html">
+                <i class="ri-settings-3-line"></i>
+                Settings
+            </a>
+        </li>
+
+        <li>
+            <a href="Admin-activity-logs.html">
+                <i class="ri-history-line"></i>
+                Activity Logs
+            </a>
+        </li>
+
+        <li>
+            <a href="Admin-System-logs.html">
+                <i class="ri-server-line"></i>
+                System Status
+            </a>
+        </li>
+
+        <li>
+            <a href="Admin-support-tickets.html">
+                <i class="ri-customer-service-2-line"></i>
+                Support Tickets
+            </a>
+        </li>
+
+        <li>
+            <a href="#">
+                <i class="ri-logout-box-r-line"></i>
+                Logout
+            </a>
+        </li>
+
+    </ul>
+
+</aside>
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="main-content">
+
+        <!-- ================= TOPBAR ================= -->
+
+        <header class="topbar">
+
+            <div class="search-box">
+
+                <i class="ri-search-line"></i>
+
+                <input type="text"
+                       placeholder="Search users, influencers, brands, tournaments...">
+
+            </div>
+
+            <div class="top-right">
+
+                <button class="notification">
+
+                    <i class="ri-notification-3-line"></i>
+
+                </button>
+
+                <button class="notification">
+
+                    <i class="ri-mail-line"></i>
+
+                </button>
+
+                <div class="admin-profile">
+
+                    <img src="images/admin.jpg"
+                         alt="Admin">
+
+                    <div>
+
+                        <h4>Admin User</h4>
+
+                        <span>Super Admin</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- ================= PAGE HEADER ================= -->
+
+        <section class="page-header">
+
+            <div>
+
+                <h1>System Status</h1>
+
+                
+
+            </div>
+
+        </section>
+
+        <!-- ================= STATUS CARDS ================= -->
+
+        <section class="stats-grid">
+
+            <div class="stat-card">
+
+                <div class="icon green">
+
+                    <i class="ri-shield-check-line"></i>
+
+                </div>
+
+                <h5>Overall Status</h5>
+
+                <h2 class="success-text">Healthy</h2>
+
+                <span>All systems operational</span>
+
+            </div>
+
+            <div class="stat-card">
+
+                <div class="icon cyan">
+
+                    <i class="ri-server-line"></i>
+
+                </div>
+
+                <h5>Server Uptime</h5>
+
+                <h2>99.98%</h2>
+
+                <span>Last 30 Days</span>
+
+            </div>
+
+            <div class="stat-card">
+
+                <div class="icon purple">
+
+                    <i class="ri-group-line"></i>
+
+                </div>
+
+                <h5>Active Users</h5>
+
+                <h2>1,842</h2>
+
+                <span>Currently Online</span>
+
+            </div>
+
+            <div class="stat-card">
+
+                <div class="icon orange">
+
+                    <i class="ri-speed-up-line"></i>
+
+                </div>
+
+                <h5>System Load</h5>
+
+                <h2>32%</h2>
+
+                <span>Normal Load</span>
+
+            </div>
+
+        </section>
+
+        <!-- ========================= -->
+        <!-- PART 2 STARTS HERE -->
+        <!-- ========================= -->
+
+<!-- ===================================== -->
+<!-- SYSTEM COMPONENTS + RECENT ALERTS -->
+<!-- ===================================== -->
+
+<div class="status-grid">
+
+    <!-- ================= COMPONENTS ================= -->
+
+    <section class="status-card">
+
+        <div class="table-header">
+
+            <h2>System Components</h2>
+
+        </div>
+
+        <table class="data-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>Component</th>
+
+                    <th>Status</th>
+
+                    <th>Uptime</th>
+
+                    <th>Response</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td><i class="ri-server-line"></i> Web Server</td>
+
+                    <td><span class="badge success">Operational</span></td>
+
+                    <td>99.99%</td>
+
+                    <td>120 ms</td>
+
+                </tr>
+
+                <tr>
+
+                    <td><i class="ri-database-2-line"></i> Database</td>
+
+                    <td><span class="badge success">Operational</span></td>
+
+                    <td>99.98%</td>
+
+                    <td>85 ms</td>
+
+                </tr>
+
+                <tr>
+
+                    <td><i class="ri-shield-user-line"></i> Authentication</td>
+
+                    <td><span class="badge success">Operational</span></td>
+
+                    <td>99.97%</td>
+
+                    <td>110 ms</td>
+
+                </tr>
+
+                <tr>
+
+                    <td><i class="ri-code-s-slash-line"></i> API Service</td>
+
+                    <td><span class="badge success">Operational</span></td>
+
+                    <td>99.96%</td>
+
+                    <td>130 ms</td>
+
+                </tr>
+
+                <tr>
+
+                    <td><i class="ri-folder-2-line"></i> File Storage</td>
+
+                    <td><span class="badge success">Operational</span></td>
+
+                    <td>99.99%</td>
+
+                    <td>95 ms</td>
+
+                </tr>
+
+                <tr>
+
+                    <td><i class="ri-mail-line"></i> Email Service</td>
+
+                    <td><span class="badge warning">Slow</span></td>
+
+                    <td>99.95%</td>
+
+                    <td>210 ms</td>
+
+                </tr>
+
+                <tr>
+
+                    <td><i class="ri-bank-card-line"></i> Payment Gateway</td>
+
+                    <td><span class="badge success">Operational</span></td>
+
+                    <td>99.97%</td>
+
+                    <td>140 ms</td>
+
+                </tr>
+
+                <tr>
+
+                    <td><i class="ri-live-line"></i> Live Match Service</td>
+
+                    <td><span class="badge success">Operational</span></td>
+
+                    <td>99.96%</td>
+
+                    <td>160 ms</td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+    <!-- ================= ALERTS ================= -->
+
+    <aside class="status-card alerts-panel">
+
+        <div class="table-header">
+
+            <h2>Recent Alerts</h2>
+
+        </div>
+
+        <div class="alert-item">
+
+            <div>
+
+                <h4>Database Backup Completed</h4>
+
+                <p>30 May 2026 • 10:30 AM</p>
+
+            </div>
+
+            <span class="badge success">Resolved</span>
+
+        </div>
+
+        <div class="alert-item">
+
+            <div>
+
+                <h4>High API Response Time</h4>
+
+                <p>30 May 2026 • 09:15 AM</p>
+
+            </div>
+
+            <span class="badge warning">Warning</span>
+
+        </div>
+
+        <div class="alert-item">
+
+            <div>
+
+                <h4>Server Load Normalized</h4>
+
+                <p>30 May 2026 • 08:45 AM</p>
+
+            </div>
+
+            <span class="badge success">Resolved</span>
+
+        </div>
+
+        <div class="alert-item">
+
+            <div>
+
+                <h4>Email Service Delay</h4>
+
+                <p>30 May 2026 • 07:20 AM</p>
+
+            </div>
+
+            <span class="badge danger">Critical</span>
+
+        </div>
+
+        <div class="alert-item">
+
+            <div>
+
+                <h4>File Storage Optimized</h4>
+
+                <p>30 May 2026 • 06:50 AM</p>
+
+            </div>
+
+            <span class="badge success">Resolved</span>
+
+        </div>
+
+    </aside>
+
+</div>
+
+<!-- ========================= -->
+<!-- PART 3 STARTS HERE -->
+<!-- ========================= -->
+
+<!-- ===================================== -->
+<!-- SERVER RESOURCE USAGE -->
+<!-- ===================================== -->
+
+<div class="status-bottom-grid">
+
+    <section class="status-card">
+
+        <div class="table-header">
+
+            <h2>Server Resource Usage</h2>
+
+            <span>Last Updated : 1 min ago</span>
+
+        </div>
+
+        <div class="resource-item">
+
+            <div class="resource-title">
+
+                <span><i class="ri-cpu-line"></i> CPU Usage</span>
+
+                <strong>32%</strong>
+
+            </div>
+
+            <div class="progress">
+
+                <div class="progress-bar purple" style="width:32%"></div>
+
+            </div>
+
+        </div>
+
+        <div class="resource-item">
+
+            <div class="resource-title">
+
+                <span><i class="ri-ram-line"></i> Memory Usage</span>
+
+                <strong>58%</strong>
+
+            </div>
+
+            <div class="progress">
+
+                <div class="progress-bar cyan" style="width:58%"></div>
+
+            </div>
+
+        </div>
+
+        <div class="resource-item">
+
+            <div class="resource-title">
+
+                <span><i class="ri-hard-drive-2-line"></i> Disk Usage</span>
+
+                <strong>41%</strong>
+
+            </div>
+
+            <div class="progress">
+
+                <div class="progress-bar orange" style="width:41%"></div>
+
+            </div>
+
+        </div>
+
+        <div class="resource-item">
+
+            <div class="resource-title">
+
+                <span><i class="ri-wifi-line"></i> Network Usage</span>
+
+                <strong>27%</strong>
+
+            </div>
+
+            <div class="progress">
+
+                <div class="progress-bar green" style="width:27%"></div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= UPTIME HISTORY ================= -->
+
+    <section class="status-card">
+
+        <div class="table-header">
+
+            <h2>Uptime History (Last 7 Days)</h2>
+
+        </div>
+
+        <div class="chart-placeholder">
+    <canvas id="uptimeChart"></canvas>
+</div>
+
+    </section>
+
+</div>
+
+<!-- ===================================== -->
+<!-- QUICK SYSTEM STATS -->
+<!-- ===================================== -->
+
+<section class="status-card">
+
+    <div class="table-header">
+
+        <h2>Quick System Statistics</h2>
+
+    </div>
+
+    <div class="quick-stats-grid">
+
+        <div class="quick-stat">
+
+            <i class="ri-user-3-line"></i>
+
+            <h3>1,842</h3>
+
+            <span>Online Users</span>
+
+        </div>
+
+        <div class="quick-stat">
+
+            <i class="ri-trophy-line"></i>
+
+            <h3>68</h3>
+
+            <span>Live Tournaments</span>
+
+        </div>
+
+        <div class="quick-stat">
+
+            <i class="ri-shield-check-line"></i>
+
+            <h3>99.98%</h3>
+
+            <span>System Uptime</span>
+
+        </div>
+
+        <div class="quick-stat">
+
+            <i class="ri-database-2-line"></i>
+
+            <h3>512 GB</h3>
+
+            <span>Database Size</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- PART 4 STARTS HERE -->
+<!-- ========================= -->
+
+<!-- ===================================== -->
+<!-- SCHEDULED MAINTENANCE -->
+<!-- ===================================== -->
+
+<section class="status-card">
+
+    <div class="table-header">
+
+        <h2>Scheduled Maintenance</h2>
+
+    </div>
+
+    <table class="data-table">
+
+        <thead>
+
+            <tr>
+
+                <th>Task</th>
+
+                <th>Date & Time</th>
+
+                <th>Duration</th>
+
+                <th>Status</th>
+
+                <th>Details</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+
+                <td>Database Optimization</td>
+
+                <td>01 Jun 2026 - 02:00 AM</td>
+
+                <td>30 mins</td>
+
+                <td><span class="badge info">Scheduled</span></td>
+
+                <td>Optimize database indexes and queries</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Server Security Update</td>
+
+                <td>03 Jun 2026 - 01:00 AM</td>
+
+                <td>45 mins</td>
+
+                <td><span class="badge info">Scheduled</span></td>
+
+                <td>Install latest security patches</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Backup System Maintenance</td>
+
+                <td>05 Jun 2026 - 03:00 AM</td>
+
+                <td>30 mins</td>
+
+                <td><span class="badge info">Scheduled</span></td>
+
+                <td>Routine backup verification</td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</section>
+
+</main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="Admin-System-logs.js"></script>

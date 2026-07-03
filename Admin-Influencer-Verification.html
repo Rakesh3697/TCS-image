@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Influencer Verification | Gaming Platform</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="Admin-Influencer-Verification.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- ========================= -->
+    <!-- SIDEBAR -->
+    <!-- ========================= -->
+
+    <aside class="sidebar">
+
+    <div class="logo">
+
+        <div class="logo-icon">🎮</div>
+
+        <div>
+
+            <h2>GAMEVERSE</h2>
+
+            <span>Admin Panel</span>
+
+        </div>
+
+    </div>
+
+    <ul class="menu">
+
+        <li>
+            <!-- Change active class for each page -->
+            <a href="Admin-Dashboard.html">
+                <i class="ri-dashboard-line"></i>
+                Dashboard
+            </a>
+        </li>
+
+        <li>
+            <a href="Admin-User-Verification.html">
+                <i class="ri-user-search-line"></i>
+                User Verification
+            </a>
+        </li>
+
+        <li>
+            <a href="Admin-Influencer-Verification.html">
+                <i class="ri-user-star-line"></i>
+                Influencer Verification
+            </a>
+        </li>
+
+        <li>
+            <a href="Admin-Brand-Verification.html">
+                <i class="ri-building-line"></i>
+                Brand Verification
+            </a>
+        </li>
+
+        <li>
+            <a href="Admin-Tournament.html">
+                <i class="ri-trophy-line"></i>
+                Tournament Management
+            </a>
+        </li>
+
+        <li>
+            <a href="Admin-subcriptions.html">
+                <i class="ri-vip-crown-line"></i>
+                Subscription Management
+            </a>
+        </li>
+
+        <li>
+            <a href="Admin-Report.html">
+                <i class="ri-file-chart-line"></i>
+                Reports
+            </a>
+        </li>
+
+        <li>
+            <a href="Admin-Analytics.html">
+                <i class="ri-bar-chart-box-line"></i>
+                Analytics
+            </a>
+        </li>
+
+        <li>
+            <a href="Admin-Settings.html">
+                <i class="ri-settings-3-line"></i>
+                Settings
+            </a>
+        </li>
+
+        <li>
+            <a href="Admin-activity-logs.html">
+                <i class="ri-history-line"></i>
+                Activity Logs
+            </a>
+        </li>
+
+        <li>
+            <a href="Admin-System-logs.html">
+                <i class="ri-server-line"></i>
+                System Status
+            </a>
+        </li>
+
+        <li>
+            <a href="Admin-support-tickets.html">
+                <i class="ri-customer-service-2-line"></i>
+                Support Tickets
+            </a>
+        </li>
+
+        <li>
+            <a href="#">
+                <i class="ri-logout-box-r-line"></i>
+                Logout
+            </a>
+        </li>
+
+    </ul>
+
+</aside>
+
+
+    <!-- ========================= -->
+    <!-- MAIN CONTENT -->
+    <!-- ========================= -->
+
+    <main class="main-content">
+
+        <!-- TOP NAVBAR -->
+
+        <header class="topbar">
+
+            <div class="search-box">
+
+                <i class="ri-search-line"></i>
+
+                <input
+                    type="text"
+                    placeholder="Search influencers, brands, tournaments..."
+                >
+
+            </div>
+
+            <div class="top-right">
+
+                <button class="notification">
+                    <i class="ri-notification-3-line"></i>
+                </button>
+
+                <button class="notification">
+                    <i class="ri-message-3-line"></i>
+                </button>
+
+                <div class="admin-profile">
+
+                    <img
+                    src="https://i.pravatar.cc/100?img=12"
+                    alt="Admin">
+
+                    <div>
+
+                        <h4>Admin User</h4>
+                        <span>Super Admin</span>
+
+                    </div>
+
+                    <i class="ri-arrow-down-s-line"></i>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- PAGE TITLE -->
+
+        <section class="page-header">
+
+            <div>
+
+                <h1>Influencer Verification</h1>
+
+              
+
+            </div>
+
+        </section>
+
+        <!-- ========================= -->
+        <!-- STATISTICS -->
+        <!-- ========================= -->
+
+        <section class="stats-grid">
+
+            <div class="stat-card">
+
+                <div class="icon purple">
+                    <i class="ri-group-line"></i>
+                </div>
+
+                <h5>All Influencers</h5>
+
+                <h2>2,387</h2>
+
+                <span>100%</span>
+
+            </div>
+
+            <div class="stat-card">
+
+                <div class="icon orange">
+                    <i class="ri-time-line"></i>
+                </div>
+
+                <h5>Pending</h5>
+
+                <h2>210</h2>
+
+                <span>8.79%</span>
+
+            </div>
+
+            <div class="stat-card">
+
+                <div class="icon cyan">
+                    <i class="ri-robot-2-line"></i>
+                </div>
+
+                <h5>AI Passed</h5>
+
+                <h2>1,245</h2>
+
+                <span>52.15%</span>
+
+            </div>
+
+            <div class="stat-card">
+
+                <div class="icon yellow">
+                    <i class="ri-loader-4-line"></i>
+                </div>
+
+                <h5>Under Review</h5>
+
+                <h2>612</h2>
+
+                <span>25.61%</span>
+
+            </div>
+
+            <div class="stat-card">
+
+                <div class="icon green">
+                    <i class="ri-checkbox-circle-line"></i>
+                </div>
+
+                <h5>Approved</h5>
+
+                <h2>1,156</h2>
+
+                <span>48.43%</span>
+
+            </div>
+
+            <div class="stat-card">
+
+                <div class="icon red">
+                    <i class="ri-close-circle-line"></i>
+                </div>
+
+                <h5>Rejected</h5>
+
+                <h2>164</h2>
+
+                <span>6.87%</span>
+
+            </div>
+
+        </section>
+
+        <!-- ========= PART 2 STARTS HERE ========= -->
+
+<!-- ========================================= -->
+        <!-- SEARCH & FILTER SECTION -->
+        <!-- ========================================= -->
+
+        <section class="filter-card">
+
+            <div class="filter-top">
+
+                <div class="table-search">
+
+                    <i class="ri-search-line"></i>
+
+                    <input
+                        type="text"
+                        placeholder="Search by influencer, email or username">
+
+                </div>
+
+                <div class="filters">
+
+                    <select>
+                        <option>Platform</option>
+                        <option>All</option>
+                        <option>YouTube</option>
+                        <option>Twitch</option>
+                        <option>Instagram</option>
+                        <option>TikTok</option>
+                    </select>
+
+                    <select>
+                        <option>Primary Game</option>
+                        <option>All</option>
+                        <option>BGMI</option>
+                        <option>Valorant</option>
+                        <option>Free Fire</option>
+                        <option>CODM</option>
+                    </select>
+
+                    <select>
+                        <option>AI Status</option>
+                        <option>All</option>
+                        <option>Passed</option>
+                        <option>Needs Review</option>
+                    </select>
+
+                    <select>
+                        <option>Verification</option>
+                        <option>Pending</option>
+                        <option>Approved</option>
+                        <option>Rejected</option>
+                    </select>
+
+                    <button class="secondary-btn">
+                        <i class="ri-filter-3-line"></i>
+                        Filter
+                    </button>
+
+                    <button class="secondary-btn">
+                        Reset
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ========================================= -->
+        <!-- CONTENT AREA -->
+        <!-- ========================================= -->
+
+        <div class="content-wrapper">
+
+            <!-- ========================================= -->
+            <!-- TABLE -->
+            <!-- ========================================= -->
+
+            <section class="table-card">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th></th>
+                            <th>Influencer</th>
+                            <th>Platform</th>
+                            <th>Primary Game</th>
+                            <th>Followers</th>
+                            <th>AI Score</th>
+                            <th>AI Status</th>
+                            <th>Verification</th>
+                            <th>Submitted</th>
+                            <th>Actions</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <!-- ROW 1 -->
+
+                        <tr>
+
+                            <td>
+                                <input type="checkbox">
+                            </td>
+
+                            <td>
+
+                                <div class="user-info">
+
+                                    <img src="https://i.pravatar.cc/70?img=15">
+
+                                    <div>
+
+                                        <h4>GameX Pro</h4>
+
+                                        <span>@gamexpro</span>
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+                            <td>
+
+                                <div class="platform-list">
+
+                                    <span>YouTube</span>
+                                    <span>Instagram</span>
+                                    <span>Twitch</span>
+
+                                </div>
+
+                            </td>
+
+                            <td>BGMI</td>
+
+                            <td>1.25M</td>
+
+                            <td>
+
+                                <div class="score">
+
+                                    <span>85 / 100</span>
+
+                                    <div class="progress">
+
+                                        <div class="progress-fill"
+                                            style="width:85%">
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+                            <td>
+
+                                <span class="badge ai-pass">
+                                    Passed
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <span class="badge pending">
+                                    Pending
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                12 May 2024
+
+                            </td>
+
+                            <td>
+
+                                <button class="primary-btn">
+                                    Review
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+                        <!-- ROW 2 -->
+
+                        <tr>
+
+                            <td><input type="checkbox"></td>
+
+                            <td>
+
+                                <div class="user-info">
+
+                                    <img src="https://i.pravatar.cc/70?img=32">
+
+                                    <div>
+
+                                        <h4>Play With Vicky</h4>
+
+                                        <span>@playvicky</span>
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+                            <td>
+
+                                <div class="platform-list">
+
+                                    <span>YouTube</span>
+
+                                    <span>Instagram</span>
+
+                                </div>
+
+                            </td>
+
+                            <td>Valorant</td>
+
+                            <td>980K</td>
+
+                            <td>
+
+                                <div class="score">
+
+                                    <span>72 / 100</span>
+
+                                    <div class="progress">
+
+                                        <div class="progress-fill"
+                                            style="width:72%">
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+                            <td>
+
+                                <span class="badge review">
+
+                                    Needs Review
+
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <span class="badge review2">
+
+                                    Under Review
+
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                11 May 2024
+
+                            </td>
+
+                            <td>
+
+                                <button class="primary-btn">
+
+                                    Review
+
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+                        <!-- ROW 3 -->
+
+                        <tr>
+
+                            <td><input type="checkbox"></td>
+
+                            <td>
+
+                                <div class="user-info">
+
+                                    <img src="https://i.pravatar.cc/70?img=50">
+
+                                    <div>
+
+                                        <h4>Shadow Gaming</h4>
+
+                                        <span>@shadowgaming</span>
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+                            <td>
+
+                                <div class="platform-list">
+
+                                    <span>YouTube</span>
+
+                                    <span>TikTok</span>
+
+                                </div>
+
+                            </td>
+
+                            <td>Free Fire</td>
+
+                            <td>560K</td>
+
+                            <td>
+
+                                <div class="score">
+
+                                    <span>68 / 100</span>
+
+                                    <div class="progress">
+
+                                        <div class="progress-fill"
+                                            style="width:68%">
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+                            <td>
+
+                                <span class="badge review">
+
+                                    Needs Review
+
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <span class="badge pending">
+
+                                    Pending
+
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                10 May 2024
+
+                            </td>
+
+                            <td>
+
+                                <button class="primary-btn">
+
+                                    Review
+
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+                        <!-- ROW 4 -->
+
+                        <tr>
+
+                            <td><input type="checkbox"></td>
+
+                            <td>
+
+                                <div class="user-info">
+
+                                    <img src="https://i.pravatar.cc/70?img=11">
+
+                                    <div>
+
+                                        <h4>Neon Gamer</h4>
+
+                                        <span>@neongamer</span>
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+                            <td>
+
+                                <div class="platform-list">
+
+                                    <span>YouTube</span>
+
+                                    <span>Instagram</span>
+
+                                    <span>Twitch</span>
+
+                                </div>
+
+                            </td>
+
+                            <td>CODM</td>
+
+                            <td>1.8M</td>
+
+                            <td>
+
+                                <div class="score">
+
+                                    <span>92 / 100</span>
+
+                                    <div class="progress">
+
+                                        <div class="progress-fill"
+                                            style="width:92%">
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+                            <td>
+
+                                <span class="badge ai-pass">
+
+                                    Passed
+
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <span class="badge approved">
+
+                                    Approved
+
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                09 May 2024
+
+                            </td>
+
+                            <td>
+
+                                <button class="primary-btn">
+
+                                    View
+
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </section>
+
+            <!-- ===== PART 3 CONTINUES HERE ===== -->
+
+<!-- ========================================= -->
+            <!-- RIGHT SIDE DETAILS PANEL -->
+            <!-- ========================================= -->
+
+            <aside class="details-panel">
+
+                <!-- Influencer Profile -->
+
+                <div class="panel-card">
+
+                    <h3>Influencer Details</h3>
+
+                    <div class="profile-card">
+
+                        <img src="https://i.pravatar.cc/120?img=15" alt="Profile">
+
+                        <h2>GameX Pro</h2>
+
+                        <p>@gamexpro</p>
+
+                        <span>Pending Verification</span>
+
+                    </div>
+
+                    <div class="profile-info">
+
+                        <div class="info-row">
+                            <span>Email</span>
+                            <strong>gamexpro@gmail.com</strong>
+                        </div>
+
+                        <div class="info-row">
+                            <span>Primary Game</span>
+                            <strong>BGMI</strong>
+                        </div>
+
+                        <div class="info-row">
+                            <span>Country</span>
+                            <strong>India</strong>
+                        </div>
+
+                        <div class="info-row">
+                            <span>Submitted</span>
+                            <strong>12 May 2024</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Social Metrics -->
+
+                <div class="panel-card">
+
+                    <h3>Social Media Metrics</h3>
+
+                    <div class="metric-row">
+                        <span>YouTube</span>
+                        <strong>1.25M</strong>
+                    </div>
+
+                    <div class="metric-row">
+                        <span>Instagram</span>
+                        <strong>320K</strong>
+                    </div>
+
+                    <div class="metric-row">
+                        <span>Twitch</span>
+                        <strong>210K</strong>
+                    </div>
+
+                    <div class="metric-row">
+                        <span>Discord</span>
+                        <strong>85K</strong>
+                    </div>
+
+                    <div class="metric-row">
+                        <span>Twitter / X</span>
+                        <strong>120K</strong>
+                    </div>
+
+                </div>
+
+                <!-- AI Verification -->
+
+                <div class="panel-card">
+
+                    <h3>AI Verification Summary</h3>
+
+                    <div class="progress-item">
+
+                        <div class="label">
+                            <span>AI Verification</span>
+                            <strong>85%</strong>
+                        </div>
+
+                        <div class="progress">
+                            <div class="progress-fill" style="width:85%"></div>
+                        </div>
+
+                    </div>
+
+                    <div class="progress-item">
+
+                        <div class="label">
+                            <span>Authenticity</span>
+                            <strong>79%</strong>
+                        </div>
+
+                        <div class="progress">
+                            <div class="progress-fill" style="width:79%"></div>
+                        </div>
+
+                    </div>
+
+                    <div class="progress-item">
+
+                        <div class="label">
+                            <span>Engagement</span>
+                            <strong>82%</strong>
+                        </div>
+
+                        <div class="progress">
+                            <div class="progress-fill" style="width:82%"></div>
+                        </div>
+
+                    </div>
+
+                    <div class="progress-item">
+
+                        <div class="label">
+                            <span>Content Quality</span>
+                            <strong>91%</strong>
+                        </div>
+
+                        <div class="progress">
+                            <div class="progress-fill" style="width:91%"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Documents -->
+
+                <div class="panel-card">
+
+                    <h3>Documents Submitted</h3>
+
+                    <ul class="document-list">
+
+                        <li>
+                            <span>ID Proof</span>
+                            <button class="secondary-btn">
+                                View
+                            </button>
+                        </li>
+
+                        <li>
+                            <span>Address Proof</span>
+                            <button class="secondary-btn">
+                                View
+                            </button>
+                        </li>
+
+                        <li>
+                            <span>Social Media Report</span>
+                            <button class="secondary-btn">
+                                View
+                            </button>
+                        </li>
+
+                        <li>
+                            <span>Gaming Portfolio</span>
+                            <button class="secondary-btn">
+                                View
+                            </button>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Admin Notes -->
+
+                <div class="panel-card">
+
+                    <h3>Admin Notes</h3>
+
+                    <textarea
+                        rows="6"
+                        placeholder="Write verification notes here..."></textarea>
+
+                    <div class="action-buttons">
+
+                        <button class="approve-btn">
+                            <i class="ri-checkbox-circle-line"></i>
+                            Approve
+                        </button>
+
+                        <button class="reject-btn">
+                            <i class="ri-close-circle-line"></i>
+                            Reject
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </aside>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

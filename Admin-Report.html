@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Reports | GameVerse Admin</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="Admin-Report.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+     <!-- ========================= -->
+    <!-- SIDEBAR -->
+    <!-- ========================= -->
+
+    <aside class="sidebar">
+
+    <div class="logo">
+
+        <div class="logo-icon">🎮</div>
+
+        <div>
+
+            <h2>GAMEVERSE</h2>
+
+            <span>Admin Panel</span>
+
+        </div>
+
+    </div>
+
+    <ul class="menu">
+
+        <li>
+            <!-- Change active class for each page -->
+            <a href="Admin-Dashboard.html">
+                <i class="ri-dashboard-line"></i>
+                Dashboard
+            </a>
+        </li>
+
+        <li>
+            <a href="Admin-User-Verification.html">
+                <i class="ri-user-search-line"></i>
+                User Verification
+            </a>
+        </li>
+
+        <li>
+            <a href="Admin-Influencer-Verification.html">
+                <i class="ri-user-star-line"></i>
+                Influencer Verification
+            </a>
+        </li>
+
+        <li>
+            <a href="Admin-Brand-Verification.html">
+                <i class="ri-building-line"></i>
+                Brand Verification
+            </a>
+        </li>
+
+        <li>
+            <a href="Admin-Tournament.html">
+                <i class="ri-trophy-line"></i>
+                Tournament Management
+            </a>
+        </li>
+
+        <li>
+            <a href="Admin-subcriptions.html">
+                <i class="ri-vip-crown-line"></i>
+                Subscription Management
+            </a>
+        </li>
+
+        <li>
+            <a href="Admin-Report.html">
+                <i class="ri-file-chart-line"></i>
+                Reports
+            </a>
+        </li>
+
+        <li>
+            <a href="Admin-Analytics.html">
+                <i class="ri-bar-chart-box-line"></i>
+                Analytics
+            </a>
+        </li>
+
+        <li>
+            <a href="Admin-Settings.html">
+                <i class="ri-settings-3-line"></i>
+                Settings
+            </a>
+        </li>
+
+        <li>
+            <a href="Admin-activity-logs.html">
+                <i class="ri-history-line"></i>
+                Activity Logs
+            </a>
+        </li>
+
+        <li>
+            <a href="Admin-System-logs.html">
+                <i class="ri-server-line"></i>
+                System Status
+            </a>
+        </li>
+
+        <li>
+            <a href="Admin-support-tickets.html">
+                <i class="ri-customer-service-2-line"></i>
+                Support Tickets
+            </a>
+        </li>
+
+        <li>
+            <a href="#">
+                <i class="ri-logout-box-r-line"></i>
+                Logout
+            </a>
+        </li>
+
+    </ul>
+
+</aside>
+
+    <!-- ========================= -->
+    <!-- MAIN CONTENT -->
+    <!-- ========================= -->
+
+    <main class="main-content">
+
+        <!-- TOPBAR -->
+
+        <header class="topbar">
+
+           <div class="search-box">
+    <i class="ri-search-line"></i>
+    <input
+        type="text"
+        id="reportSearch"
+        placeholder="Search reports..."
+    >
+</div>
+
+            <div class="top-right">
+
+                <button class="notification">
+
+                    <i class="ri-notification-3-line"></i>
+
+                </button>
+
+                <div class="admin-profile">
+
+                    <img src="https://i.pravatar.cc/100?img=12">
+
+                    <div>
+
+                        <h4>Admin User</h4>
+
+                        <span>Super Admin</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- PAGE HEADER -->
+
+        <section class="page-header">
+
+            <div>
+
+                <h1>Reports</h1>
+
+                
+
+            </div>
+
+        </section>
+
+        <!-- ========================= -->
+        <!-- USER REPORT -->
+        <!-- ========================= -->
+
+        <section class="report-card">
+
+            <div class="report-header">
+
+                <h2>
+
+                    <i class="ri-user-line"></i>
+
+                    User Report
+
+                </h2>
+
+            </div>
+
+            <div class="stats-grid">
+
+                <div class="stat-card">
+
+                    <div class="icon purple">
+
+                        <i class="ri-group-line"></i>
+
+                    </div>
+
+                    <h5>Total Users</h5>
+
+                    <h2>5,742</h2>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <div class="icon green">
+
+                        <i class="ri-checkbox-circle-line"></i>
+
+                    </div>
+
+                    <h5>Active Users</h5>
+
+                    <h2>5,401</h2>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <div class="icon cyan">
+
+                        <i class="ri-user-add-line"></i>
+
+                    </div>
+
+                    <h5>New Users</h5>
+
+                    <h2>84</h2>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <div class="icon red">
+
+                        <i class="ri-forbid-line"></i>
+
+                    </div>
+
+                    <h5>Banned Users</h5>
+
+                    <h2>27</h2>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ========================= -->
+        <!-- INFLUENCER REPORT -->
+        <!-- ========================= -->
+
+        <section class="report-card">
+
+            <div class="report-header">
+
+                <h2>
+
+                    <i class="ri-shield-user-line"></i>
+
+                    Influencer Report
+
+                </h2>
+
+            </div>
+
+            <div class="stats-grid">
+
+                <div class="stat-card">
+
+                    <div class="icon green">
+
+                        <i class="ri-checkbox-circle-line"></i>
+
+                    </div>
+
+                    <h5>Verified Influencers</h5>
+
+                    <h2>1,156</h2>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <div class="icon orange">
+
+                        <i class="ri-time-line"></i>
+
+                    </div>
+
+                    <h5>Pending Verification</h5>
+
+                    <h2>210</h2>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <div class="icon red">
+
+                        <i class="ri-close-circle-line"></i>
+
+                    </div>
+
+                    <h5>Rejected</h5>
+
+                    <h2>164</h2>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ========================= -->
+        <!-- PART 2 STARTS HERE -->
+        <!-- ========================= -->
+
+<!-- ========================= -->
+        <!-- BRAND REPORT -->
+        <!-- ========================= -->
+
+        <section class="report-card">
+
+            <div class="report-header">
+
+                <h2>
+
+                    <i class="ri-building-line"></i>
+
+                    Brand Report
+
+                </h2>
+
+            </div>
+
+            <div class="stats-grid">
+
+                <div class="stat-card">
+
+                    <div class="icon green">
+
+                        <i class="ri-checkbox-circle-line"></i>
+
+                    </div>
+
+                    <h5>Approved Brands</h5>
+
+                    <h2>632</h2>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <div class="icon orange">
+
+                        <i class="ri-time-line"></i>
+
+                    </div>
+
+                    <h5>Pending Brands</h5>
+
+                    <h2>54</h2>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <div class="icon red">
+
+                        <i class="ri-close-circle-line"></i>
+
+                    </div>
+
+                    <h5>Rejected Brands</h5>
+
+                    <h2>18</h2>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ========================= -->
+        <!-- TOURNAMENT REPORT -->
+        <!-- ========================= -->
+
+        <section class="report-card">
+
+            <div class="report-header">
+
+                <h2>
+
+                    <i class="ri-trophy-line"></i>
+
+                    Tournament Report
+
+                </h2>
+
+            </div>
+
+            <div class="stats-grid">
+
+                <div class="stat-card">
+
+                    <div class="icon purple">
+
+                        <i class="ri-trophy-line"></i>
+
+                    </div>
+
+                    <h5>Total Tournaments</h5>
+
+                    <h2>421</h2>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <div class="icon green">
+
+                        <i class="ri-play-circle-line"></i>
+
+                    </div>
+
+                    <h5>Active Tournaments</h5>
+
+                    <h2>76</h2>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <div class="icon cyan">
+
+                        <i class="ri-checkbox-circle-line"></i>
+
+                    </div>
+
+                    <h5>Completed</h5>
+
+                    <h2>318</h2>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <div class="icon red">
+
+                        <i class="ri-close-circle-line"></i>
+
+                    </div>
+
+                    <h5>Cancelled</h5>
+
+                    <h2>27</h2>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ========================= -->
+        <!-- PART 3 STARTS HERE -->
+        <!-- ========================= -->
+
+<!-- ========================= -->
+        <!-- SUBSCRIPTION REPORT -->
+        <!-- ========================= -->
+
+        <section class="report-card">
+
+            <div class="report-header">
+
+                <h2>
+
+                    <i class="ri-vip-crown-line"></i>
+
+                    Subscription Report
+
+                </h2>
+
+            </div>
+
+            <div class="stats-grid">
+
+                <div class="stat-card">
+
+                    <div class="icon cyan">
+
+                        <i class="ri-user-line"></i>
+
+                    </div>
+
+                    <h5>Basic Plan Users</h5>
+
+                    <h2>3,984</h2>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <div class="icon purple">
+
+                        <i class="ri-vip-crown-fill"></i>
+
+                    </div>
+
+                    <h5>Premium Users</h5>
+
+                    <h2>1,758</h2>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <div class="icon green">
+
+                        <i class="ri-money-dollar-circle-line"></i>
+
+                    </div>
+
+                    <h5>Total Revenue</h5>
+
+                    <h2>₹8,42,500</h2>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="Admin-Report.js"></script>
+
+
+</body>
+
+</html>

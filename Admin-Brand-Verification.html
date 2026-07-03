@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Brand Verification | Gaming Admin</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="Admin-Brand-Verification.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+     <!-- ========================= -->
+    <!-- SIDEBAR -->
+    <!-- ========================= -->
+
+    <aside class="sidebar">
+
+    <div class="logo">
+
+        <div class="logo-icon">🎮</div>
+
+        <div>
+
+            <h2>GAMEVERSE</h2>
+
+            <span>Admin Panel</span>
+
+        </div>
+
+    </div>
+
+    <ul class="menu">
+
+        <li >
+            <!-- Change active class for each page -->
+            <a href="Admin-Dashboard.html">
+                <i class="ri-dashboard-line"></i>
+                Dashboard
+            </a>
+        </li>
+
+        <li>
+            <a href="Admin-User-Verification.html">
+                <i class="ri-user-search-line"></i>
+                User Verification
+            </a>
+        </li>
+
+        <li>
+            <a href="Admin-Influencer-Verification.html">
+                <i class="ri-user-star-line"></i>
+                Influencer Verification
+            </a>
+        </li>
+
+        <li>
+            <a href="Admin-Brand-Verification.html">
+                <i class="ri-building-line"></i>
+                Brand Verification
+            </a>
+        </li>
+
+        <li>
+            <a href="Admin-Tournament.html">
+                <i class="ri-trophy-line"></i>
+                Tournament Management
+            </a>
+        </li>
+
+        <li>
+            <a href="Admin-subcriptions.html">
+                <i class="ri-vip-crown-line"></i>
+                Subscription Management
+            </a>
+        </li>
+
+        <li>
+            <a href="Admin-Report.html">
+                <i class="ri-file-chart-line"></i>
+                Reports
+            </a>
+        </li>
+
+        <li>
+            <a href="Admin-Analytics.html">
+                <i class="ri-bar-chart-box-line"></i>
+                Analytics
+            </a>
+        </li>
+
+        <li>
+            <a href="Admin-Settings.html">
+                <i class="ri-settings-3-line"></i>
+                Settings
+            </a>
+        </li>
+
+        <li>
+            <a href="Admin-activity-logs.html">
+                <i class="ri-history-line"></i>
+                Activity Logs
+            </a>
+        </li>
+
+        <li>
+            <a href="Admin-System-logs.html">
+                <i class="ri-server-line"></i>
+                System Status
+            </a>
+        </li>
+
+        <li>
+            <a href="Admin-support-tickets.html">
+                <i class="ri-customer-service-2-line"></i>
+                Support Tickets
+            </a>
+        </li>
+
+        <li>
+            <a href="#">
+                <i class="ri-logout-box-r-line"></i>
+                Logout
+            </a>
+        </li>
+
+    </ul>
+
+</aside>
+    <!-- ========================= -->
+    <!-- MAIN CONTENT -->
+    <!-- ========================= -->
+
+    <main class="main-content">
+
+        <!-- TOP NAVBAR -->
+
+        <header class="topbar">
+
+            <div class="search-box">
+
+                <i class="ri-search-line"></i>
+
+               <input
+    id="searchInput"
+    type="text"
+    placeholder="Search by brand, company or email">
+            </div>
+
+            <div class="top-right">
+
+                <button class="notification">
+
+                    <i class="ri-notification-3-line"></i>
+
+                </button>
+
+                <button class="notification">
+
+                    <i class="ri-message-3-line"></i>
+
+                </button>
+
+                <div class="admin-profile">
+
+                    <img src="https://i.pravatar.cc/100?img=12" alt="Admin">
+
+                    <div>
+
+                        <h4>Admin User</h4>
+
+                        <span>Super Admin</span>
+
+                    </div>
+
+                    <i class="ri-arrow-down-s-line"></i>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- PAGE HEADER -->
+
+        <section class="page-header">
+
+            <div>
+
+                <h1>Brand Verification</h1>
+
+                
+            </div>
+
+        </section>
+
+        <!-- ========================= -->
+        <!-- STATISTICS CARDS -->
+        <!-- ========================= -->
+
+        <section class="stats-grid">
+
+            <div class="stat-card">
+
+                <div class="icon purple">
+
+                    <i class="ri-building-line"></i>
+
+                </div>
+
+                <h5>All Brands</h5>
+
+<h2 id="allBrands">1842</h2>
+
+                <span>100%</span>
+
+            </div>
+
+            <div class="stat-card">
+
+                <div class="icon orange">
+
+                    <i class="ri-time-line"></i>
+
+                </div>
+
+                <h5>Pending</h5>
+
+                <h2 id="pendingCount">156</h2>
+
+                <span>8.47%</span>
+
+            </div>
+
+            <div class="stat-card">
+
+                <div class="icon yellow">
+
+                    <i class="ri-loader-4-line"></i>
+
+                </div>
+
+                <h5>Under Review</h5>
+
+                <h2 id="reviewCount">278</h2>
+
+                <span>15.09%</span>
+
+            </div>
+
+            <div class="stat-card">
+
+                <div class="icon green">
+
+                    <i class="ri-checkbox-circle-line"></i>
+
+                </div>
+
+                <h5>Approved</h5>
+
+                <h2 id="approvedCount">1312</h2>
+
+                <span>71.20%</span>
+
+            </div>
+
+            <div class="stat-card">
+
+                <div class="icon red">
+
+                    <i class="ri-close-circle-line"></i>
+
+                </div>
+
+                <h5>Rejected</h5>
+
+               <h2 id="rejectedCount">96</h2>
+
+                <span>5.21%</span>
+
+            </div>
+
+        </section>
+
+        <!-- ========================= -->
+        <!-- PART 2 STARTS HERE -->
+        <!-- ========================= -->
+
+
+<!-- ========================================= -->
+        <!-- FILTER SECTION -->
+        <!-- ========================================= -->
+
+        <section class="filter-card">
+
+            <div class="filter-top">
+
+                <div class="table-search">
+
+                    <i class="ri-search-line"></i>
+
+                    <input
+    id="tableSearch"
+    type="text"
+    placeholder="Search by brand, company or email">
+                </div>
+
+                <div class="filters">
+
+                    <select id="industryFilter">
+    <option value="all">Industry</option>
+                        <option>All</option>
+                        <option>Gaming Hardware</option>
+                        <option>Technology</option>
+                        <option>Beverages</option>
+                        <option>Accessories</option>
+                    </select>
+
+                    <select id="statusFilter">
+    <option value="all">Verification Status</option>
+                        <option>Pending</option>
+                        <option>Approved</option>
+                        <option>Rejected</option>
+                        <option>Under Review</option>
+                    </select>
+
+                    <select id="countryFilter">
+    <option value="all">Country</option>
+                        <option>All</option>
+                        <option>India</option>
+                        <option>USA</option>
+                        <option>Taiwan</option>
+                        <option>Hong Kong</option>
+                    </select>
+
+                    <select>
+                        <option>Joined On</option>
+                        <option>Today</option>
+                        <option>This Week</option>
+                        <option>This Month</option>
+                        <option>All Time</option>
+                    </select>
+
+                    <button class="secondary-btn">
+                        <i class="ri-filter-3-line"></i>
+                        Filter
+                    </button>
+
+                    <button id="resetBtn" class="secondary-btn">
+    Reset
+</button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ========================================= -->
+        <!-- CONTENT -->
+        <!-- ========================================= -->
+
+        <div class="content-wrapper">
+
+            <section class="table-card">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th></th>
+                            <th>Brand / Company</th>
+                            <th>Industry</th>
+                            <th>Country</th>
+                            <th>Status</th>
+                            <th>Joined On</th>
+                            <th>Documents</th>
+                            <th>Actions</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <!-- Row 1 -->
+
+                        <tr
+class="brand-row"
+data-name="Razer India Pvt. Ltd."
+data-email="contact@razer.com"
+data-industry="Gaming Hardware"
+data-country="India"
+data-status="Pending">
+
+                            <td><input type="checkbox"></td>
+
+                            <td>
+
+                                <div class="user-info">
+
+                                    <img src="images/razer.png" alt="Razer">
+
+                                    <div>
+
+                                        <h4>Razer India Pvt. Ltd.</h4>
+
+                                        <span>contact@razer.com</span><br>
+
+                                        <span>+91 98765 43210</span>
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+                            <td>Gaming Hardware</td>
+
+                            <td>India</td>
+
+                            <td>
+
+                                <span class="badge pending">
+                                    Pending
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                12 May 2024
+
+                            </td>
+
+                            <td>
+
+                                3 / 5 Submitted
+
+                            </td>
+
+                            <td>
+
+                                <button class="primary-btn select-brand">
+
+    Select
+
+</button>
+
+                            </td>
+
+                        </tr>
+
+                        <!-- Row 2 -->
+
+       <tr
+class="brand-row"
+data-name="Red Bull Gaming"
+data-email="partnership@redbull.com"
+data-industry="Beverages"
+data-country="Austria"
+data-status="Under Review">
+                            <td><input type="checkbox"></td>
+
+                            <td>
+
+                                <div class="user-info">
+
+                                    <img src="images/redbull.png">
+
+                                    <div>
+
+                                        <h4>Red Bull Gaming</h4>
+
+                                        <span>partnership@redbull.com</span><br>
+
+                                        <span>+91 91234 56789</span>
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+                            <td>Beverages</td>
+
+                            <td>Austria</td>
+
+                            <td>
+
+                                <span class="badge review2">
+
+                                    Under Review
+
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                11 May 2024
+
+                            </td>
+
+                            <td>
+
+                                4 / 6 Submitted
+
+                            </td>
+
+                            <td>
+
+                                <button class="primary-btn select-brand">
+
+    Review
+
+</button>
+
+                            </td>
+
+                        </tr>
+
+                        <!-- Row 3 -->
+
+                        <tr
+class="brand-row"
+data-name="NVIDIA India"
+data-email="business.india@nvidia.com"
+data-industry="Technology"
+data-country="India"
+data-status="Approved">
+
+                            <td><input type="checkbox"></td>
+
+                            <td>
+
+                                <div class="user-info">
+
+                                    <img src="images/nvidia.png">
+
+                                    <div>
+
+                                        <h4>NVIDIA India</h4>
+
+                                        <span>business.india@nvidia.com</span><br>
+
+                                        <span>+91 99876 54321</span>
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+                            <td>Technology</td>
+
+                            <td>India</td>
+
+                            <td>
+
+                                <span class="badge approved">
+
+                                    Approved
+
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                10 May 2024
+
+                            </td>
+
+                            <td>
+
+                                6 / 6 Verified
+
+                            </td>
+
+                            <td>
+
+                               <button class="primary-btn select-brand">
+
+    View
+
+</button>
+
+                            </td>
+
+                        </tr>
+
+                        <!-- Row 4 -->
+
+                        <tr
+class="brand-row"
+data-name="ASUS ROG"
+data-email="business@asus.com"
+data-industry="Gaming Hardware"
+data-country="Taiwan"
+data-status="Approved">
+
+                            <td><input type="checkbox"></td>
+
+                            <td>
+
+                                <div class="user-info">
+
+                                    <img src="images/asus.png">
+
+                                    <div>
+
+                                        <h4>ASUS ROG</h4>
+
+                                        <span>business@asus.com</span><br>
+
+                                        <span>+91 90090 90090</span>
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+                            <td>Gaming Hardware</td>
+
+                            <td>Taiwan</td>
+
+                            <td>
+
+                                <span class="badge approved">
+
+                                    Approved
+
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                08 May 2024
+
+                            </td>
+
+                            <td>
+
+                                6 / 6 Verified
+
+                            </td>
+
+                            <td>
+
+                               <button class="primary-btn select-brand">
+
+    Select
+
+</button>
+                            </td>
+
+                        </tr>
+
+                        <!-- Row 5 -->
+
+                     <tr
+class="brand-row"
+data-name="ZOTAC Gaming"
+data-email="sales@zotac.com"
+data-industry="Gaming Hardware"
+data-country="Hong Kong"
+data-status="Rejected">
+
+                            <td><input type="checkbox"></td>
+
+                            <td>
+
+                                <div class="user-info">
+
+                                    <img src="images/zotac.png">
+
+                                    <div>
+
+                                        <h4>ZOTAC Gaming</h4>
+
+                                        <span>sales@zotac.com</span><br>
+
+                                        <span>+91 70070 70070</span>
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+                            <td>Gaming Hardware</td>
+
+                            <td>Hong Kong</td>
+
+                            <td>
+
+                                <span class="badge rejected">
+
+                                    Rejected
+
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                07 May 2024
+
+                            </td>
+
+                            <td>
+
+                                3 / 6 Incomplete
+
+                            </td>
+
+                            <td>
+
+                                <button class="primary-btn select-brand">
+
+    View
+
+</button>
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </section>
+
+            <!-- ========= PART 3 STARTS HERE ========= -->
+
+<!-- ========================================= -->
+            <!-- RIGHT SIDE BRAND DETAILS PANEL -->
+            <!-- ========================================= -->
+
+            <aside class="details-panel">
+
+                <!-- BRAND DETAILS -->
+
+                <div class="panel-card">
+
+                    <h3>Brand Details</h3>
+
+                    <div class="profile-card">
+
+                        <img src="images/razer.png" alt="Razer Logo">
+
+                        <h2 id="brandName">Razer India Pvt. Ltd.</h2>
+
+                        <p>Gaming Hardware</p>
+
+                        <span id="brandStatus">Pending</span>
+
+                    </div>
+
+                    <div class="profile-info">
+
+                        <div class="info-row">
+                            <span>Industry</span>
+                            <strong id="industryValue">Gaming Hardware</strong>
+                        </div>
+
+                        <div class="info-row">
+                            <span>Website</span>
+                            <strong>www.razer.com</strong>
+                        </div>
+
+                        <div class="info-row">
+                            <span>Country</span>
+                            <strong id="countryValue">India</strong>
+                        </div>
+
+                        <div class="info-row">
+                            <span>Email</span>
+                            <strong id="emailValue">contact@razer.com</strong>
+                        </div>
+
+                        <div class="info-row">
+                            <span>Phone</span>
+                            <strong>+91 98765 43210</strong>
+                        </div>
+
+                        <div class="info-row">
+                            <span>Contact Person</span>
+                            <strong>Rohit Sharma</strong>
+                        </div>
+
+                        <div class="info-row">
+                            <span>Designation</span>
+                            <strong>Marketing Manager</strong>
+                        </div>
+
+                        <div class="info-row">
+                            <span>Joined</span>
+                            <strong>12 May 2024</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- DOCUMENTS -->
+
+                <div class="panel-card">
+
+                    <h3>Documents Submitted</h3>
+
+                    <ul class="document-list">
+
+                        <li>
+                            <span>Business Registration</span>
+                            <button class="secondary-btn">View</button>
+                        </li>
+
+                        <li>
+                            <span>GST Certificate</span>
+                            <button class="secondary-btn">View</button>
+                        </li>
+
+                        <li>
+                            <span>Company PAN Card</span>
+                            <button class="secondary-btn">View</button>
+                        </li>
+
+                        <li>
+                            <span>Trademark Certificate</span>
+                            <button class="secondary-btn">Pending</button>
+                        </li>
+
+                        <li>
+                            <span>Website Screenshot</span>
+                            <button class="secondary-btn">View</button>
+                        </li>
+
+                        <li>
+                            <span>Company Logo</span>
+                            <button class="secondary-btn">View</button>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <!-- VERIFICATION SUMMARY -->
+
+                <div class="panel-card">
+
+                    <h3>Verification Summary</h3>
+
+                    <div class="progress-item">
+
+                        <div class="label">
+                            <span>Business Verification</span>
+                            <strong>90%</strong>
+                        </div>
+
+                        <div class="progress">
+                            <div class="progress-fill" style="width:90%"></div>
+                        </div>
+
+                    </div>
+
+                    <div class="progress-item">
+
+                        <div class="label">
+                            <span>Document Validation</span>
+                            <strong>82%</strong>
+                        </div>
+
+                        <div class="progress">
+                            <div class="progress-fill" style="width:82%"></div>
+                        </div>
+
+                    </div>
+
+                    <div class="progress-item">
+
+                        <div class="label">
+                            <span>Website Authenticity</span>
+                            <strong>88%</strong>
+                        </div>
+
+                        <div class="progress">
+                            <div class="progress-fill" style="width:88%"></div>
+                        </div>
+
+                    </div>
+
+                    <div class="progress-item">
+
+                        <div class="label">
+                            <span>Brand Trust Score</span>
+                            <strong>94%</strong>
+                        </div>
+
+                        <div class="progress">
+                            <div class="progress-fill" style="width:94%"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- ADMIN NOTES -->
+
+                <div class="panel-card">
+
+                    <h3>Admin Notes</h3>
+
+                    <textarea
+                        rows="6"
+                        placeholder="Write internal verification notes..."></textarea>
+
+                </div>
+
+                <!-- ACTIONS -->
+
+                <div class="panel-card">
+
+                    <h3>Verification Actions</h3>
+
+                    <div class="action-buttons">
+
+<button id="approveBtn" class="approve-btn">
+
+                            <i class="ri-checkbox-circle-line"></i>
+
+                            Approve
+
+                        </button>
+
+                       <button id="rejectBtn" class="reject-btn">
+
+                            <i class="ri-close-circle-line"></i>
+
+                            Reject
+
+                        </button>
+
+                    </div>
+
+                    <br>
+
+                    <button class="secondary-btn" style="width:100%;">
+
+                        <i class="ri-edit-2-line"></i>
+
+                        Request Changes
+
+                    </button>
+
+                </div>
+
+            </aside>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="Admin-Brand-Verification.js"></script>
+
+</body>
+
+</html>
